@@ -37,7 +37,7 @@ function toCelsius(fahrenheit) {
 document.getElementById("demo").innerHTML = toCelsius(77);
 
 
-console.log(toCelsius(22))
+console.log(toCelsius(1))
 
 
 

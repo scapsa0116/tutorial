@@ -132,7 +132,14 @@ console.log(x);
 
 function myFunction(a, b) {
   return a * b; // Function returns the product of a and b
-} // function counter() {
+}
+
+function toCelsius(fahrenheit) {
+  return 5 / 9 * (fahrenheit - 32);
+}
+
+document.getElementById("demo").innerHTML = toCelsius(77);
+console.log(toCelsius(22)); // function counter() {
 //   let seconds = 0;
 //   setInterval(() => {
 //     seconds += 1;

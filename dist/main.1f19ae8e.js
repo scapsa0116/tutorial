@@ -118,13 +118,24 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"main.js":[function(require,module,exports) {
-var newYears = "1st Jan 2021";
+var newYears = "1 Jan 2022";
+var daysE1 = document.getElementById('days');
+var hoursE1 = document.getElementById('hours');
+var minsE1 = document.getElementById('mins');
+var secondsE1 = document.getElementById('seconds');
 
 function countdown() {
   var newYearsDate = new Date(newYears);
   var currentDate = new Date();
-  var seconds = (newYearsDate - currentDate) * 1000;
-  console.log(newYearsDate - currentDate);
+  var totalSeconds = (newYearsDate - currentDate) / 1000;
+  var days = Math.floor(totalSeconds / 3600 / 24);
+  var hours = Math.floor(totalSeconds / 3600) % 24;
+  var mins = Math.floor(totalSeconds / 60) % 60;
+  var seconds = Math.floor(totalSeconds) % 60;
+  daysE1.innerHTML = days;
+  hoursE1.innerHTML = hours;
+  minsE1.innerHTML = mins;
+  secondsE1.innerHTML = seconds;
 }
 
 countdown();

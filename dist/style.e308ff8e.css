@@ -3,13 +3,33 @@
 }
 
 body {
-  font-family: "Poppins, sans-serif";
-  margin: 0;
   background-image: url("https://images.unsplash.com/photo-1555255675-1d2d8db2d191?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRpbWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-position: center
     center;
+  font-family: "Poppins, sans-serif";
   min-height: 100vh;
+  margin: 0;
+}
+
+.contdown-container {
+  display: flex;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-top: -10rem;
+}
+
+.bold {
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0
+    2rem;
 }
 
 

@@ -118,7 +118,17 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"main.js":[function(require,module,exports) {
-// document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1555255675-1d2d8db2d191?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRpbWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60')";
+var newYears = "1st Jan 2021";
+
+function countdown() {
+  var newYearsDate = new Date(newYears);
+  var currentDate = new Date();
+  var seconds = (newYearsDate - currentDate) * 1000;
+  console.log(newYearsDate - currentDate);
+}
+
+countdown();
+setInterval(countdown, 1000);
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

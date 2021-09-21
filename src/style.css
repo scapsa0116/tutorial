@@ -21,13 +21,21 @@ body {
 }
 
 h1 {
+  font-weight: bold;
   font-size: 4rem;
   margin-top: -10rem;
+  margin-top: 5rem;
 }
 
 .bold {
+  font-weight: bold;
   font-size: 6rem;
   line-height: 1;
   margin: 0
     2rem;
+}
+
+.conuntdown-element
+  span {
+  font-size: 1.3rem;
 }

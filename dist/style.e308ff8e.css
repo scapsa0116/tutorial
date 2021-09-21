@@ -2,7 +2,7 @@
   ! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css 
 */
 
-html {
+/* html {
   line-height: 1.2; 
   -webkit-text-size-adjust: 100%; 
 }
@@ -115,6 +115,17 @@ progress {
 
 [hidden] {
   display: none;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins, sans-serif";
+  margin: 0;
+  background-image: img=
+    "https://images.unsplash.com/photo-1555255675-1d2d8db2d191?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRpbWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60";
 }
 
 

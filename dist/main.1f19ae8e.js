@@ -118,30 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"main.js":[function(require,module,exports) {
-// let 2firstName = "Kim"
-// console.log(2firstName)
-// function myFunction(p1, p2) {
-//   return p1 * p2;   // The function returns the product of p1 and p2
-// }
-// console.log(myFunction(2,4))
-// let x = myFunction(4, 3);   // Function is called, return value will end up in x
-// console.log(x)
-// function myFunction(a, b) {
-//   return a * b;             // Function returns the product of a and b
-// }
-// function toCelsius(fahrenheit) {
-//   return (5/9) * (fahrenheit-32);
-// }
-// document.getElementById("demo").innerHTML = toCelsius(77);
-// console.log(toCelsius(1))
-// function counter() {
-//   let seconds = 0;
-//   setInterval(() => {
-//     seconds += 1;
-//     document.getElementById('app').innerHTML = `<p>You have been here for ${seconds} seconds.</p>`;
-//   }, 1000);
-// }
-// counter();
+document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1555255675-1d2d8db2d191?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRpbWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60')";
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -170,7 +147,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49508" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60081" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

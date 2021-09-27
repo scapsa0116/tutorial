@@ -121,7 +121,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var newYears = "1 Jan 2022";
 var daysE1 = document.getElementById('days');
 var hoursE1 = document.getElementById('hours');
-var minsE1 = document.getElementById('mins');
+var minsE1 = document.getElementById('minutes');
 var secondsE1 = document.getElementById('seconds');
 
 function countdown() {
@@ -168,7 +168,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60081" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55458" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

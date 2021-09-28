@@ -19,10 +19,14 @@ const mins = Math.floor(totalSeconds / 60) % 60;
 const seconds = Math.floor(totalSeconds) % 60;
 
 daysE1.innerHTML = days;
-hoursE1.innerHTML = hours;
-minsE1.innerHTML = mins;
-secondsE1.innerHTML = seconds;
+hoursE1.innerHTML = formatTime(hours);
+minsE1.innerHTML = formatTime(mins);
+secondsE1.innerHTML = formatTime(seconds);
 
+}
+
+function formatTime(time){
+    return time< 10 ? `0${time}`: time
 }
 
 countdown();
